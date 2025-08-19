@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE ='http://localhost:3000/api/auth'
+const API_BASE ='https://pixelbackend-pqo3.onrender.com/api/auth'
 
 export const registerService = async ({ email, password, confirmPassword }) =>{
   console.log("request send to call signup function", email, password, confirmPassword);

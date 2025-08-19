@@ -44,7 +44,7 @@
 // }
 
 import axios from 'axios' 
-const API_BASE = `http://localhost:3000/api/image` 
+const API_BASE = `https://pixelbackend-pqo3.onrender.com/api/image` 
 const getAuthHeader = (token) => (
 { headers: { 
   Authorization: `${token}` 
