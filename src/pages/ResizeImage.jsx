@@ -53,7 +53,7 @@ const ResizeImage = () => {
 
     try {
       const { data } = await resizeImage(file, width, height, authToken, user._id)
-      const PUBLIC_BASE = 'http://localhost:3000'
+      const PUBLIC_BASE = 'https://pixelbackend-pqo3.onrender.com'
       setProcessedUrl(`${PUBLIC_BASE}/${data.path}`)
        setMessage(`✅ File uploaded and compressed successfully`)
     } catch (err) {

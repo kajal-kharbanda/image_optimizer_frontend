@@ -29,7 +29,7 @@ const ConvertImage = () => {
     try {
       const { data } = await convertImage(file, format, authToken, user._id)
       console.log({data});
-        const PUBLIC_BASE = 'http://localhost:3000'
+        const PUBLIC_BASE = 'https://pixelbackend-pqo3.onrender.com'
       setDownloadUrl(`${PUBLIC_BASE}/${data.path}`)
       //  setMessage(`✅ File uploaded and compressed successfully`)
       setMessage('✅ File Uploaded and compressed successfully');

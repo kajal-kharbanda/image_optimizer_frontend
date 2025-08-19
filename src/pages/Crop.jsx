@@ -150,7 +150,7 @@ const CropImage = () => {
 
     try {
       const { data } = await cropImage(selectedFile, x, y, width, height, authToken, user._id)
-      setDownloadUrl(`http://localhost:3000/${data.path}`)
+      setDownloadUrl(`https://pixelbackend-pqo3.onrender.com/${data.path}`)
       setMessage('✅ Image cropped successfully')
     } catch (err) {
       console.error(err)
